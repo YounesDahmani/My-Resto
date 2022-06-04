@@ -2,7 +2,9 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "index.scss"
+        "index.scss",
+        "layouts/_section2.scss",
+        "layouts/_header.scss"
     ],
     "names": [],
     "file": "index.css"
