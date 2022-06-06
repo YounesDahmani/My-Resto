@@ -1,1 +1,48 @@
-@import url(./layouts/_section2.scss);
+@font-face {
+  font-family: "Allura", Arial, Helvetica, sans-serif;
+  src: url(../fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  src: url(../fonts/Roboto-Light.ttf);
+}
+// Polices
+
+$font1: "Allura";
+$font2: "Poppins";
+$font3: "Roboto";
+
+// couleurs principales
+
+$color1: #eeeeee;
+$color2: #a67245;
+$color3: #000000;
+$color4: #21201e;
+
+// Mixins
+
+@mixin title {
+  font-family: $font1;
+  color: $color2;
+}
+@mixin title2 {
+  font-family: $font2;
+  color: $color1;
+}
+@mixin title3 {
+  font-family: $font3;
+  color: $color4;
+}
+// Règles Générales
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: $font3;
+}

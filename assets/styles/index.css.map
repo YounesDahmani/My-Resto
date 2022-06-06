@@ -1,10 +1,15 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,UAAU;EACR,WAAW,EAAE,sCAAsC;EACnD,GAAG,EAAE,gCAAgC;;;AAEvC,UAAU;EACR,WAAW,EAAE,uCAAuC;EACpD,GAAG,EAAE,gCAAgC;;;AAEvC,UAAU;EACR,WAAW,EAAE,sCAAsC;EACnD,GAAG,EAAE,8BAA8B;;;AA+BrC,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,UAAU,EAAE,KAAK;EACjB,WAAW,EA9BL,QAAQ;CA+Bf",
     "sources": [
         "index.scss",
+        "_settings.scss",
+        "layouts/_header.scss",
+        "layouts/_section1.scss",
         "layouts/_section2.scss",
-        "layouts/_header.scss"
+        "layouts/_section3.scss",
+        "layouts/_section4.scss",
+        "layouts/_footer.scss"
     ],
     "names": [],
     "file": "index.css"
