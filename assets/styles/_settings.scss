@@ -22,12 +22,14 @@ $color1: #eeeeee;
 $color2: #a67245;
 $color3: #000000;
 $color4: #21201e;
+$color5: rgb(109, 109, 109);
 
 // Mixins
 
 @mixin title {
   font-family: $font1;
   color: $color2;
+  font-weight: 100;
 }
 @mixin title2 {
   font-family: $font2;

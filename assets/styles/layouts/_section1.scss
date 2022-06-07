@@ -1,0 +1,69 @@
+.section1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  .left-section1 {
+    max-width: 100%;
+    padding: 15px;
+    background-color: $color1;
+    .left-section1-container {
+      @include center;
+      flex-direction: column;
+      padding: 15px;
+      border: 1px dashed $color2;
+      h4 {
+        @include title;
+        font-size: 2rem;
+        line-height: 20px;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+      }
+      span {
+        @include title3;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        color: $color3;
+      }
+      .icon-section1 {
+        background: url(/assets/img/ic-plate.png) center/cover;
+        width: 30px;
+        height: 30px;
+      }
+      p {
+        font-family: $font2;
+        color: $color5;
+        font-size: 0.8rem;
+      }
+      .chefcook {
+        @include center;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        .chef-pic {
+          background: url(/assets/img/avatar-01.jpg) center/cover;
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          margin-top: 10px;
+        }
+        h4 {
+          @include title3;
+          font-size: 1rem;
+          margin-block-end: 0.1em;
+        }
+        h5 {
+          text-transform: uppercase;
+          font-size: 0.7rem;
+          color: rgb(159, 159, 159);
+          font-weight: 100;
+          margin-block-start: 0;
+          margin-block-end: 0;
+        }
+      }
+    }
+  }
+  .right-section1 {
+    max-width: 100%;
+    background: url(/assets/img/store-01.jpg) center/cover;
+  }
+}
