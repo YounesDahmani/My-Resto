@@ -1,0 +1,50 @@
+header {
+  min-height: 100vh;
+  background: url(/assets/img/bg-slider-06.jpg) center/cover;
+  color: $color1;
+  text-align: center;
+  width: 100%;
+
+  nav {
+    display: grid;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 15% 70% 10%;
+    .logo {
+      background: url(/assets/img/logo-maquette-desktop.png) center no-repeat;
+      width: 100px;
+      height: 100px;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      text-transform: uppercase;
+      font-family: $font2;
+      font-size: 0.8rem;
+      li {
+        padding: 0px 10px;
+      }
+    }
+  }
+}
+
+.header-title {
+  padding: 75px 0px 15px;
+  h1 {
+    @include title;
+    font-family: $font1;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 40px;
+
+    span {
+      @include title2;
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 7px;
+    }
+  }
+}

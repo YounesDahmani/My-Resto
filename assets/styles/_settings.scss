@@ -42,7 +42,11 @@ $color4: #21201e;
 body {
   margin: 0;
   padding: 0;
+  list-style-type: none;
   box-sizing: border-box;
   min-height: 100vh;
   font-family: $font3;
+}
+ul {
+  list-style-type: none;
 }
