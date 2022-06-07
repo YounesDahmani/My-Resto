@@ -4,17 +4,28 @@ header {
   color: $color1;
   text-align: center;
   width: 100%;
+  display: grid;
+  grid-template-rows: 5% 95%;
 
   nav {
     display: grid;
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    grid-template-columns: 15% 70% 10%;
+    grid-template-columns: 15% 70% 15%;
     .logo {
-      background: url(/assets/img/logo-maquette-desktop.png) center no-repeat;
-      width: 100px;
-      height: 100px;
+      font-family: $font1;
+      text-align: left;
+      font-size: 2rem;
+      font-weight: 100;
+      color: white;
+    }
+    .menu {
+      text-align: center;
+      padding-inline-start: 0;
+    }
+    .icons {
+      text-align: right;
     }
     ul {
       display: flex;
@@ -29,22 +40,40 @@ header {
     }
   }
 }
+.main-header {
+  @include center;
 
-.header-title {
-  padding: 75px 0px 15px;
-  h1 {
-    @include title;
-    font-family: $font1;
-    font-size: 3rem;
-    font-weight: 100;
-    line-height: 40px;
+  .header-title {
+    margin-bottom: 10%;
+    @include center;
+    flex-direction: column;
+    h1 {
+      @include title;
+      font-family: $font1;
+      font-size: 3rem;
+      font-weight: 100;
+      line-height: 40px;
 
-    span {
-      @include title2;
-      font-size: 3.5rem;
+      span {
+        @include title2;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 7px;
+      }
+    }
+    .icon-header {
+      background: url(/assets/img/ic-plate-big.png) center/cover no-repeat;
+      width: 30px;
+      height: 30px;
+      margin-bottom: 10px;
+    }
+    h2 {
       text-transform: uppercase;
-      font-weight: 600;
-      letter-spacing: 7px;
+      font-family: $font2;
+      font-weight: 100;
+      font-size: 0.8rem;
+      letter-spacing: 6px;
     }
   }
 }

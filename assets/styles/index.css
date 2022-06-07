@@ -33,6 +33,10 @@ header {
   color: #eeeeee;
   text-align: center;
   width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 5% 95%;
+      grid-template-rows: 5% 95%;
 }
 
 header nav {
@@ -43,14 +47,26 @@ header nav {
           align-items: center;
   width: 80%;
   margin: 0 auto;
-  -ms-grid-columns: 15% 70% 10%;
-      grid-template-columns: 15% 70% 10%;
+  -ms-grid-columns: 15% 70% 15%;
+      grid-template-columns: 15% 70% 15%;
 }
 
 header nav .logo {
-  background: url(/assets/img/logo-maquette-desktop.png) center no-repeat;
-  width: 100px;
-  height: 100px;
+  font-family: "Allura";
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 100;
+  color: white;
+}
+
+header nav .menu {
+  text-align: center;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+header nav .icons {
+  text-align: right;
 }
 
 header nav ul {
@@ -72,11 +88,36 @@ header nav ul li {
   padding: 0px 10px;
 }
 
-.header-title {
-  padding: 75px 0px 15px;
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.header-title h1 {
+.main-header .header-title {
+  margin-bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-header .header-title h1 {
   font-family: "Allura";
   color: #a67245;
   font-family: "Allura";
@@ -85,12 +126,27 @@ header nav ul li {
   line-height: 40px;
 }
 
-.header-title h1 span {
+.main-header .header-title h1 span {
   font-family: "Poppins";
   color: #eeeeee;
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 7px;
+}
+
+.main-header .header-title .icon-header {
+  background: url(/assets/img/ic-plate-big.png) center/cover no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.main-header .header-title h2 {
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 0.8rem;
+  letter-spacing: 6px;
 }
 /*# sourceMappingURL=index.css.map */

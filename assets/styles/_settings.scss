@@ -37,6 +37,11 @@ $color4: #21201e;
   font-family: $font3;
   color: $color4;
 }
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 // Règles Générales
 
 body {
