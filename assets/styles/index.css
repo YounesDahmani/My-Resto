@@ -13,6 +13,22 @@
   src: url(../fonts/Roboto-Light.ttf);
 }
 
+.right-part-menu-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right-part-menu-grid p {
+  color: #a67245;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -54,7 +70,7 @@ header nav {
 header nav .logo {
   font-family: "Allura";
   text-align: left;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 100;
   color: white;
 }
@@ -67,6 +83,7 @@ header nav .menu {
 
 header nav .icons {
   text-align: right;
+  padding: 0px 30px;
 }
 
 header nav ul {
@@ -262,5 +279,195 @@ header nav ul li {
 .section1 .right-section1 {
   max-width: 100%;
   background: url(/assets/img/store-01.jpg) center/cover;
+}
+
+.section2 {
+  background: #21201e;
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section2 h2 {
+  margin-block: 0;
+  padding: 55px 0px 20px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Allura";
+  color: #a67245;
+  font-weight: 100;
+}
+
+.section2 .icon-section2 {
+  background: url(/assets/img/ic-plate.png) center/cover;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.section2 ul {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  color: #eeeeee;
+  font-family: "Poppins";
+  font-weight: 100;
+  width: 40%;
+  margin-bottom: 35px;
+}
+
+.section2 ul li {
+  position: relative;
+}
+
+.section2 ul li::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #eeeeee;
+  position: absolute;
+  bottom: -7px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.section2 .menu-section2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  background: #eeeeee;
+  width: 55%;
+  border-top: 5px solid #a67245;
+  margin-bottom: 150px;
+}
+
+.section2 .menu-section2 .left-menu-section2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
+  border-bottom: 1px dashed #9f9f9f;
+  margin: 0px 15px;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .left-part-menu-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .left-part-menu-grid .menu-pic {
+  background: url(/assets/img/dish-item-01.jpg) center/cover;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .left-part-menu-grid .menu-pic {
+  height: 70px;
+  width: 70px;
+  border-radius: 40px;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .left-part-menu-grid .text-menu {
+  text-align: left;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .left-part-menu-grid .text-menu h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .left-part-menu-grid .text-menu p {
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 0.9rem;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  color: #5a5a5a;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
+  border-bottom: 1px dashed #9f9f9f;
+  margin: 0px 15px;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .left-part-menu-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .left-part-menu-grid .menu-pic {
+  background: url(/assets/img/dish-item-02.jpg) center/cover;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .left-part-menu-grid .menu-pic {
+  height: 70px;
+  width: 70px;
+  border-radius: 40px;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .left-part-menu-grid .text-menu {
+  text-align: left;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .left-part-menu-grid .text-menu h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .left-part-menu-grid .text-menu p {
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 0.9rem;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  color: #5a5a5a;
 }
 /*# sourceMappingURL=index.css.map */

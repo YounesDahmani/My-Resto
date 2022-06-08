@@ -1,0 +1,74 @@
+.section2 {
+  background: $color4;
+  text-align: center;
+  position: relative;
+  @include center;
+  flex-direction: column;
+  h2 {
+    margin-block: 0;
+    padding: 55px 0px 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    @include title;
+  }
+  .icon-section2 {
+    background: url(/assets/img/ic-plate.png) center/cover;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  ul {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    padding: 0;
+    color: $color1;
+    font-family: $font2;
+    font-weight: 100;
+    width: 40%;
+    margin-bottom: 35px;
+    li {
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: $color1;
+        position: absolute;
+        bottom: -7px;
+        transform: translateX(-100%);
+      }
+    }
+  }
+  .menu-section2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: $color1;
+    width: 55%;
+    border-top: 5px solid $color2;
+    margin-bottom: 150px;
+    .left-menu-section2 {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      .menu-grid-1 {
+        @include grid-template;
+        .left-part-menu-grid {
+          .menu-pic {
+            background: url(/assets/img/dish-item-01.jpg) center/cover;
+          }
+          @include grid-template-2;
+        }
+      }
+      .menu-grid-2 {
+        @include grid-template;
+        .left-part-menu-grid {
+          .menu-pic {
+            background: url(/assets/img/dish-item-02.jpg) center/cover;
+          }
+          @include grid-template-2;
+        }
+      }
+    }
+  }
+}
