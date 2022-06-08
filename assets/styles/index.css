@@ -300,6 +300,17 @@ header nav ul li {
           flex-direction: column;
 }
 
+.section2::after {
+  content: "";
+  background: url(/assets/img/bg-menu-01.jpg) center/cover;
+  position: absolute;
+  bottom: 45px;
+  max-width: 1920px;
+  width: 100%;
+  height: 580px;
+  z-index: 1;
+}
+
 .section2 h2 {
   margin-block: 0;
   padding: 55px 0px 20px;
@@ -354,12 +365,15 @@ header nav ul li {
 .section2 .menu-section2 {
   display: -ms-grid;
   display: grid;
+  z-index: 2;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   background: #eeeeee;
-  width: 55%;
+  width: 50%;
   border-top: 5px solid #a67245;
   margin-bottom: 150px;
+  padding-bottom: 20px;
+  height: 550px;
 }
 
 .section2 .menu-section2 .left-menu-section2 {
@@ -417,7 +431,7 @@ header nav ul li {
   font-size: 0.9rem;
   -webkit-margin-before: 0;
           margin-block-start: 0;
-  color: #5a5a5a;
+  color: #686868;
 }
 
 .section2 .menu-section2 .left-menu-section2 .menu-grid-2 {
@@ -468,6 +482,319 @@ header nav ul li {
   font-size: 0.9rem;
   -webkit-margin-before: 0;
           margin-block-start: 0;
-  color: #5a5a5a;
+  color: #686868;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
+  border-bottom: 1px dashed #9f9f9f;
+  margin: 0px 15px;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .left-part-menu-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .left-part-menu-grid .menu-pic {
+  background: url(/assets/img/dish-item-03.jpg) center/cover;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .left-part-menu-grid .menu-pic {
+  height: 70px;
+  width: 70px;
+  border-radius: 40px;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .left-part-menu-grid .text-menu {
+  text-align: left;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .left-part-menu-grid .text-menu h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .left-part-menu-grid .text-menu p {
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 0.9rem;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  color: #686868;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-4 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
+  border-bottom: 1px dashed #9f9f9f;
+  margin: 0px 15px;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .left-part-menu-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .left-part-menu-grid .menu-pic {
+  background: url(/assets/img/dish-item-04.jpg) center/cover;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .left-part-menu-grid .menu-pic {
+  height: 70px;
+  width: 70px;
+  border-radius: 40px;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .left-part-menu-grid .text-menu {
+  text-align: left;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .left-part-menu-grid .text-menu h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .left-part-menu-grid .text-menu p {
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 0.9rem;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  color: #686868;
+}
+
+.section2 .menu-section2 .right-menu-section2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-5 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
+  border-bottom: 1px dashed #9f9f9f;
+  margin: 0px 15px;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .left-part-menu-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .left-part-menu-grid .menu-pic {
+  background: url(/assets/img/dish-item-05.jpg) center/cover;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .left-part-menu-grid .menu-pic {
+  height: 70px;
+  width: 70px;
+  border-radius: 40px;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .left-part-menu-grid .text-menu {
+  text-align: left;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .left-part-menu-grid .text-menu h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .left-part-menu-grid .text-menu p {
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 0.9rem;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  color: #686868;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-6 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
+  border-bottom: 1px dashed #9f9f9f;
+  margin: 0px 15px;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .left-part-menu-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .left-part-menu-grid .menu-pic {
+  background: url(/assets/img/dish-item-06.jpg) center/cover;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .left-part-menu-grid .menu-pic {
+  height: 70px;
+  width: 70px;
+  border-radius: 40px;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .left-part-menu-grid .text-menu {
+  text-align: left;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .left-part-menu-grid .text-menu h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .left-part-menu-grid .text-menu p {
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 0.9rem;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  color: #686868;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-7 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
+  border-bottom: 1px dashed #9f9f9f;
+  margin: 0px 15px;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .left-part-menu-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .left-part-menu-grid .menu-pic {
+  background: url(/assets/img/dish-item-07.jpg) center/cover;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .left-part-menu-grid .menu-pic {
+  height: 70px;
+  width: 70px;
+  border-radius: 40px;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .left-part-menu-grid .text-menu {
+  text-align: left;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .left-part-menu-grid .text-menu h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .left-part-menu-grid .text-menu p {
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 0.9rem;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  color: #686868;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-8 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
+  border-bottom: 1px dashed #9f9f9f;
+  margin: 0px 15px;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .left-part-menu-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .left-part-menu-grid .menu-pic {
+  background: url(/assets/img/dish-item-08.jpg) center/cover;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .left-part-menu-grid .menu-pic {
+  height: 70px;
+  width: 70px;
+  border-radius: 40px;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .left-part-menu-grid .text-menu {
+  text-align: left;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .left-part-menu-grid .text-menu h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .left-part-menu-grid .text-menu p {
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 0.9rem;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  color: #686868;
 }
 /*# sourceMappingURL=index.css.map */
