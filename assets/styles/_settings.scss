@@ -34,6 +34,7 @@ $color5: rgb(109, 109, 109);
 @mixin title2 {
   font-family: $font2;
   color: $color1;
+  text-transform: uppercase;
 }
 @mixin title3 {
   font-family: $font3;

@@ -147,6 +147,7 @@ header nav ul li {
 .main-header .header-title h1 span {
   font-family: "Poppins";
   color: #eeeeee;
+  text-transform: uppercase;
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 600;
@@ -178,7 +179,7 @@ header nav ul li {
 
 .section1 .left-section1 {
   max-width: 100%;
-  padding: 15px;
+  padding: 20px;
   background-color: #eeeeee;
 }
 
@@ -796,5 +797,88 @@ header nav ul li {
   -webkit-margin-before: 0;
           margin-block-start: 0;
   color: #686868;
+}
+
+.section3 {
+  background: #21201e;
+  padding: 25px 0px;
+}
+
+.section3 .section3-element {
+  width: 70%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+}
+
+.section3 .section3-element .left-part {
+  background: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+}
+
+.section3 .section3-element .left-part .left-part-container {
+  border: 1px dashed #eeeeee;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section3 .section3-element .left-part .left-part-container h2 {
+  font-family: "Allura";
+  color: #a67245;
+  font-weight: 100;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 25px;
+}
+
+.section3 .section3-element .left-part .left-part-container h2 span {
+  font-family: "Roboto";
+  text-transform: uppercase;
+  color: #eeeeee;
+  font-size: 1.5rem;
+}
+
+.section3 .section3-element .left-part .left-part-container .icon {
+  background: url(/assets/img/ic-plate.png) center/cover;
+  width: 30px;
+  height: 30px;
+}
+
+.section3 .section3-element .left-part .left-part-container h3 {
+  font-family: "Roboto";
+  text-transform: uppercase;
+  color: #a67245;
+}
+
+.section3 .section3-element .left-part .left-part-container p {
+  color: #eeeeee;
+  font-family: "Poppins";
+  text-align: center;
+  font-weight: 100;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=index.css.map */
