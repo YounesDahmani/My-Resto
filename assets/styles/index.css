@@ -807,7 +807,7 @@ header nav ul li {
 
 .section3 .section3-element {
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto 35px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30% 70%;
@@ -903,6 +903,7 @@ header nav ul li {
 
 .section3 .section3-element .right-part .right-part-container {
   height: 80%;
+  width: 100%;
 }
 
 .section3 .section3-element .right-part .right-part-container h3 {
@@ -930,20 +931,50 @@ header nav ul li {
   margin: 25px auto 45px;
 }
 
-.section3 .section3-element .right-part .right-part-container form {
-  width: 70%;
+.section3 .section3-element .right-part .right-part-container form .container {
+  width: 80%;
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 33% 34% 33%;
+      grid-template-columns: 33% 34% 33%;
+  -ms-grid-rows: 33% 34% 33%;
+      grid-template-rows: 33% 34% 33%;
+  gap: 15px;
 }
 
-.section3 .section3-element .right-part .right-part-container form input:not([type="submit"]) {
+.section3 .section3-element .right-part .right-part-container form .container .form-input {
+  border-bottom: 1px solid #b0b0b0;
+  width: 100%;
+}
+
+.section3 .section3-element .right-part .right-part-container form .container input:not([type="submit"]) {
   background: transparent;
-  border: none;
+  border-bottom: 1px solid #a67245;
+  border-width: 0;
   font-family: "Poppins";
   font-weight: 100;
+  width: 100%;
+}
+
+.section3 .section3-element .right-part .right-part-container form .submit-btn {
+  display: block;
+  width: 100%;
+}
+
+.section3 .section3-element .right-part .right-part-container form input[type="submit"] {
+  background: #000000;
+  color: #eeeeee;
+  font-family: "Roboto";
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: 35px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
 }
 /*# sourceMappingURL=index.css.map */
