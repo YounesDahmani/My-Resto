@@ -24,78 +24,88 @@
     width: 80%;
     grid-template-columns: 60% 40%;
     margin: 40px 0 40px;
+    gap: 20px;
     .left-part {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       gap: 20px;
       .top-element {
-        display: grid;
-        grid-template-columns: 40% 60%;
-        background: $color1;
-        height: 220px;
+        @include event-template;
         .left-part-element {
           background: url(/assets/img/event-01.jpg) center/cover;
-          @include center;
-          .square {
-            height: 40%;
-            width: 40%;
-            background: $color4;
-            color: $color1;
-            @include center;
-            p {
-              font-size: 2rem;
-              line-height: 20px;
-              span {
-                font-size: 0.8rem;
-              }
-            }
-          }
-        }
-        .right-part-element {
-          padding: 20px;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-
-          h4 {
-            font-family: $font2;
-            font-size: 1.2rem;
-            text-align: left;
-            font-weight: 100;
-            padding-left: 5px;
-            margin-block: 0px;
-            color: rgb(93, 93, 93);
-          }
-          .info {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            font-family: $font2;
-            font-weight: 100;
-            font-size: 0.8rem;
-            color: rgb(193, 193, 193);
-            i,
-            p {
-              margin-right: 5px;
-            }
-          }
-          a {
-            text-transform: uppercase;
-            text-decoration: none;
-            text-align: left;
-            display: block;
-            color: rgb(73, 73, 73);
-            font-size: 0.8rem;
-            letter-spacing: 3px;
-          }
         }
       }
       .bottom-element {
-        display: grid;
-        grid-template-columns: 40% 60%;
+        @include event-template;
+        .left-part-element {
+          background: url(/assets/img/event-02.jpg) center/cover;
+        }
+      }
+    }
+    .right-part {
+      background: url(/assets/img/event-03.jpg) center/cover;
+      @include center;
+      .right-part-container {
         background: $color1;
-        border: 1px solid red;
+        width: 90%;
+        height: 90%;
+        position: relative;
+        @include center;
+        flex-direction: column;
+
+        .square {
+          height: 100px;
+          width: 100px;
+          background: $color4;
+          color: $color1;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          display: block;
+
+          p {
+            font-size: 2rem;
+            line-height: 20px;
+            span {
+              font-size: 0.8rem;
+            }
+          }
+        }
+        h3 {
+          font-family: $font2;
+          text-align: center;
+          font-size: 1.2rem;
+          font-weight: 100;
+          padding-left: 5px;
+          margin-block: 0px;
+          color: rgb(93, 93, 93);
+        }
+        .info {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          font-family: $font2;
+          font-weight: 100;
+          font-size: 0.8rem;
+          color: rgb(193, 193, 193);
+          i,
+          p {
+            margin-right: 5px;
+          }
+        }
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+          text-align: center;
+          display: block;
+          color: rgb(73, 73, 73);
+          font-size: 0.8rem;
+          letter-spacing: 3px;
+          position: absolute;
+          bottom: 15%;
+        }
       }
     }
   }

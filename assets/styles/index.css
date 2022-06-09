@@ -1024,6 +1024,7 @@ header nav ul li {
   -ms-grid-columns: 60% 40%;
       grid-template-columns: 60% 40%;
   margin: 40px 0 40px;
+  gap: 20px;
 }
 
 .section4 .grid-container .left-part {
@@ -1050,7 +1051,6 @@ header nav ul li {
 }
 
 .section4 .grid-container .left-part .top-element .left-part-element {
-  background: url(/assets/img/event-01.jpg) center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1063,8 +1063,8 @@ header nav ul li {
 }
 
 .section4 .grid-container .left-part .top-element .left-part-element .square {
-  height: 40%;
-  width: 40%;
+  height: 100px;
+  width: 100px;
   background: #21201e;
   color: #eeeeee;
   display: -webkit-box;
@@ -1143,12 +1143,212 @@ header nav ul li {
   letter-spacing: 3px;
 }
 
+.section4 .grid-container .left-part .top-element .left-part-element {
+  background: url(/assets/img/event-01.jpg) center/cover;
+}
+
 .section4 .grid-container .left-part .bottom-element {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40% 60%;
       grid-template-columns: 40% 60%;
   background: #eeeeee;
-  border: 1px solid red;
+  height: 220px;
+}
+
+.section4 .grid-container .left-part .bottom-element .left-part-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section4 .grid-container .left-part .bottom-element .left-part-element .square {
+  height: 100px;
+  width: 100px;
+  background: #21201e;
+  color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section4 .grid-container .left-part .bottom-element .left-part-element .square p {
+  font-size: 2rem;
+  line-height: 20px;
+}
+
+.section4 .grid-container .left-part .bottom-element .left-part-element .square p span {
+  font-size: 0.8rem;
+}
+
+.section4 .grid-container .left-part .bottom-element .right-part-element {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section4 .grid-container .left-part .bottom-element .right-part-element h4 {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  text-align: left;
+  font-weight: 100;
+  padding-left: 5px;
+  margin-block: 0px;
+  color: #5d5d5d;
+}
+
+.section4 .grid-container .left-part .bottom-element .right-part-element .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: #c1c1c1;
+}
+
+.section4 .grid-container .left-part .bottom-element .right-part-element .info i,
+.section4 .grid-container .left-part .bottom-element .right-part-element .info p {
+  margin-right: 5px;
+}
+
+.section4 .grid-container .left-part .bottom-element .right-part-element a {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+  color: #494949;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+}
+
+.section4 .grid-container .left-part .bottom-element .left-part-element {
+  background: url(/assets/img/event-02.jpg) center/cover;
+}
+
+.section4 .grid-container .right-part {
+  background: url(/assets/img/event-03.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section4 .grid-container .right-part .right-part-container {
+  background: #eeeeee;
+  width: 90%;
+  height: 90%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section4 .grid-container .right-part .right-part-container .square {
+  height: 100px;
+  width: 100px;
+  background: #21201e;
+  color: #eeeeee;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+}
+
+.section4 .grid-container .right-part .right-part-container .square p {
+  font-size: 2rem;
+  line-height: 20px;
+}
+
+.section4 .grid-container .right-part .right-part-container .square p span {
+  font-size: 0.8rem;
+}
+
+.section4 .grid-container .right-part .right-part-container h3 {
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding-left: 5px;
+  margin-block: 0px;
+  color: #5d5d5d;
+}
+
+.section4 .grid-container .right-part .right-part-container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: #c1c1c1;
+}
+
+.section4 .grid-container .right-part .right-part-container .info i,
+.section4 .grid-container .right-part .right-part-container .info p {
+  margin-right: 5px;
+}
+
+.section4 .grid-container .right-part .right-part-container a {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: #494949;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  position: absolute;
+  bottom: 15%;
 }
 /*# sourceMappingURL=index.css.map */
