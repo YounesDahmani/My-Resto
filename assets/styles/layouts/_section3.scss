@@ -48,5 +48,47 @@
         }
       }
     }
+    .right-part {
+      background: $color1;
+      text-align: center;
+      @include center;
+      flex-direction: column;
+      .right-part-container {
+        height: 80%;
+        h3 {
+          @include title;
+          font-size: 2.5rem;
+          text-align: center;
+          line-height: 30px;
+          margin-block-end: 0;
+          span {
+            font-family: $font3;
+            text-transform: uppercase;
+            color: $color3;
+            font-size: 2rem;
+          }
+        }
+        .icon {
+          background: url(/assets/img/ic-plate.png) center/cover;
+          width: 30px;
+          height: 30px;
+          margin: 25px auto 45px;
+        }
+        form {
+          width: 70%;
+
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+
+          input:not([type="submit"]) {
+            background: transparent;
+            border: none;
+            font-family: $font2;
+            font-weight: 100;
+          }
+        }
+      }
+    }
   }
 }

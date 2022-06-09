@@ -228,29 +228,40 @@
                 </div>
             </div>
             <div class="right-part">
-                <h3>Reservation <br> <span>online booking</span></h3>
-                <div class="icon"></div>
-                <form action="#">
-                    <label for="people"></label>
-                    <input type="number" id="people" placeholder="People">
+                <div class="right-part-container">
+                    <h3>Reservation <br> <span>online booking</span></h3>
+                    <div class="icon"></div>
+                    <form action="#">
+                        <div>
+                            <label for="people"></label>
+                            <input type="number" id="people" placeholder="People"></div>
 
-                    <label for="date"></label>
-                    <input type="datetime-local" value="15/07/2020" name="date" id="date" min="10/02/2010"
-                        max="10/02/2024">
+                        <div>
+                            <label for="date"></label>
+                            <input type="datetime-local" value="15/07/2020" name="date" id="date" min="10/02/2010"
+                                max="10/02/2024"></div>
+                        <div>
+                            <label for="hour"></label>
+                            <input type="time">
+                        </div>
 
-                    <label for="hour"></label>
-                    <input type="time">
+                        <div>
+                            <label for="name"></label>
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
 
-                    <label for="name"></label>
-                    <input type="text" id="name" placeholder="Name">
+                        <div>
+                            <label for="phone"></label>
+                            <input type="tel" id="phone" placeholder="Phone">
+                        </div>
 
-                    <label for="phone"></label>
-                    <input type="tel" id="phone" placeholder="Phone">
-
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="Email">
-                    <input type="submit" value="book now">
-                </form>
+                        <div>
+                            <label for="email"></label>
+                            <input type="email" id="email" placeholder="Email">
+                        </div>
+                        <input type="submit" value="book now">
+                    </form>
+                </div>
             </div>
         </div>
     </section>
