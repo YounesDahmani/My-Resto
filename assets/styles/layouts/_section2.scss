@@ -39,6 +39,9 @@
     font-weight: 100;
     width: 40%;
     margin-bottom: 35px;
+    @media screen and(max-width:875px ) {
+      width: 80%;
+    }
     li {
       position: relative;
 
@@ -58,49 +61,50 @@
     z-index: 2;
     grid-template-columns: 50% 50%;
     background: $color1;
-    width: 50%;
+    width: 60%;
     border-top: 5px solid $color2;
     margin-bottom: 150px;
     padding-bottom: 20px;
     height: 550px;
+    @media screen and(max-width:875px ) {
+      display: block;
+      width: 80%;
+      height: 100%;
+    }
     .left-menu-section2 {
       display: grid;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       .menu-grid-1 {
         @include grid-template;
-        .left-part-menu-grid {
-          .menu-pic {
-            background: url(/assets/img/dish-item-01.jpg) center/cover;
-          }
-          @include grid-template-2;
+
+        .menu-pic {
+          background: url(/assets/img/dish-item-01.jpg) center/cover;
         }
+        @include grid-template-2;
       }
       .menu-grid-2 {
         @include grid-template;
-        .left-part-menu-grid {
-          .menu-pic {
-            background: url(/assets/img/dish-item-02.jpg) center/cover;
-          }
-          @include grid-template-2;
+
+        .menu-pic {
+          background: url(/assets/img/dish-item-02.jpg) center/cover;
         }
+        @include grid-template-2;
       }
       .menu-grid-3 {
         @include grid-template;
-        .left-part-menu-grid {
-          .menu-pic {
-            background: url(/assets/img/dish-item-03.jpg) center/cover;
-          }
-          @include grid-template-2;
+
+        .menu-pic {
+          background: url(/assets/img/dish-item-03.jpg) center/cover;
         }
+        @include grid-template-2;
       }
       .menu-grid-4 {
         @include grid-template;
-        .left-part-menu-grid {
-          .menu-pic {
-            background: url(/assets/img/dish-item-04.jpg) center/cover;
-          }
-          @include grid-template-2;
+
+        .menu-pic {
+          background: url(/assets/img/dish-item-04.jpg) center/cover;
         }
+        @include grid-template-2;
       }
     }
     .right-menu-section2 {
@@ -108,39 +112,32 @@
       grid-template-rows: 1fr 1fr 1fr 1fr;
       .menu-grid-5 {
         @include grid-template;
-        .left-part-menu-grid {
-          .menu-pic {
-            background: url(/assets/img/dish-item-05.jpg) center/cover;
-          }
-          @include grid-template-2;
+
+        .menu-pic {
+          background: url(/assets/img/dish-item-05.jpg) center/cover;
         }
+        @include grid-template-2;
       }
       .menu-grid-6 {
         @include grid-template;
-        .left-part-menu-grid {
-          .menu-pic {
-            background: url(/assets/img/dish-item-06.jpg) center/cover;
-          }
-          @include grid-template-2;
+        .menu-pic {
+          background: url(/assets/img/dish-item-06.jpg) center/cover;
         }
+        @include grid-template-2;
       }
       .menu-grid-7 {
         @include grid-template;
-        .left-part-menu-grid {
-          .menu-pic {
-            background: url(/assets/img/dish-item-07.jpg) center/cover;
-          }
-          @include grid-template-2;
+        .menu-pic {
+          background: url(/assets/img/dish-item-07.jpg) center/cover;
         }
+        @include grid-template-2;
       }
       .menu-grid-8 {
         @include grid-template;
-        .left-part-menu-grid {
-          .menu-pic {
-            background: url(/assets/img/dish-item-08.jpg) center/cover;
-          }
-          @include grid-template-2;
+        .menu-pic {
+          background: url(/assets/img/dish-item-08.jpg) center/cover;
         }
+        @include grid-template-2;
       }
     }
   }

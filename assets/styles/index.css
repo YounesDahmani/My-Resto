@@ -438,6 +438,12 @@ header nav ul li {
   margin-bottom: 35px;
 }
 
+@media screen and (max-width: 875px) {
+  .section2 ul {
+    width: 80%;
+  }
+}
+
 .section2 ul li {
   position: relative;
 }
@@ -460,11 +466,19 @@ header nav ul li {
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   background: #eeeeee;
-  width: 50%;
+  width: 60%;
   border-top: 5px solid #a67245;
   margin-bottom: 150px;
   padding-bottom: 20px;
   height: 550px;
+}
+
+@media screen and (max-width: 875px) {
+  .section2 .menu-section2 {
+    display: block;
+    width: 80%;
+    height: 100%;
+  }
 }
 
 .section2 .menu-section2 .left-menu-section2 {
@@ -477,49 +491,57 @@ header nav ul li {
 .section2 .menu-section2 .left-menu-section2 .menu-grid-1 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90% 10%;
-      grid-template-columns: 90% 10%;
+  -ms-grid-columns: 30% 60% 10%;
+      grid-template-columns: 30% 60% 10%;
   border-bottom: 1px dashed #9f9f9f;
-  margin: 0px 15px;
-}
-
-.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .left-part-menu-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 75%;
-      grid-template-columns: 25% 75%;
+  margin: 0px 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .left-part-menu-grid .menu-pic {
+@media screen and (max-width: 875px) {
+  .section2 .menu-section2 .left-menu-section2 .menu-grid-1 {
+    padding: 35px 0px;
+  }
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .menu-pic {
   background: url(/assets/img/dish-item-01.jpg) center/cover;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .left-part-menu-grid .menu-pic {
+.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .menu-pic {
   height: 70px;
   width: 70px;
   border-radius: 40px;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .left-part-menu-grid .text-menu {
+.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .text-menu {
   text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .left-part-menu-grid .text-menu h3 {
+@media screen and (max-width: 432px) {
+  .section2 .menu-section2 .left-menu-section2 .menu-grid-1 .text-menu {
+    padding: 0px 15px;
+  }
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .text-menu h3 {
   text-transform: uppercase;
   font-weight: 100;
   font-family: "Roboto";
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .left-part-menu-grid .text-menu p {
+.section2 .menu-section2 .left-menu-section2 .menu-grid-1 .text-menu p {
   font-family: "Poppins";
   font-weight: 100;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   color: #686868;
@@ -528,49 +550,57 @@ header nav ul li {
 .section2 .menu-section2 .left-menu-section2 .menu-grid-2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90% 10%;
-      grid-template-columns: 90% 10%;
+  -ms-grid-columns: 30% 60% 10%;
+      grid-template-columns: 30% 60% 10%;
   border-bottom: 1px dashed #9f9f9f;
-  margin: 0px 15px;
-}
-
-.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .left-part-menu-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 75%;
-      grid-template-columns: 25% 75%;
+  margin: 0px 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .left-part-menu-grid .menu-pic {
+@media screen and (max-width: 875px) {
+  .section2 .menu-section2 .left-menu-section2 .menu-grid-2 {
+    padding: 35px 0px;
+  }
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .menu-pic {
   background: url(/assets/img/dish-item-02.jpg) center/cover;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .left-part-menu-grid .menu-pic {
+.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .menu-pic {
   height: 70px;
   width: 70px;
   border-radius: 40px;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .left-part-menu-grid .text-menu {
+.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .text-menu {
   text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .left-part-menu-grid .text-menu h3 {
+@media screen and (max-width: 432px) {
+  .section2 .menu-section2 .left-menu-section2 .menu-grid-2 .text-menu {
+    padding: 0px 15px;
+  }
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .text-menu h3 {
   text-transform: uppercase;
   font-weight: 100;
   font-family: "Roboto";
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .left-part-menu-grid .text-menu p {
+.section2 .menu-section2 .left-menu-section2 .menu-grid-2 .text-menu p {
   font-family: "Poppins";
   font-weight: 100;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   color: #686868;
@@ -579,49 +609,57 @@ header nav ul li {
 .section2 .menu-section2 .left-menu-section2 .menu-grid-3 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90% 10%;
-      grid-template-columns: 90% 10%;
+  -ms-grid-columns: 30% 60% 10%;
+      grid-template-columns: 30% 60% 10%;
   border-bottom: 1px dashed #9f9f9f;
-  margin: 0px 15px;
-}
-
-.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .left-part-menu-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 75%;
-      grid-template-columns: 25% 75%;
+  margin: 0px 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .left-part-menu-grid .menu-pic {
+@media screen and (max-width: 875px) {
+  .section2 .menu-section2 .left-menu-section2 .menu-grid-3 {
+    padding: 35px 0px;
+  }
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .menu-pic {
   background: url(/assets/img/dish-item-03.jpg) center/cover;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .left-part-menu-grid .menu-pic {
+.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .menu-pic {
   height: 70px;
   width: 70px;
   border-radius: 40px;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .left-part-menu-grid .text-menu {
+.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .text-menu {
   text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .left-part-menu-grid .text-menu h3 {
+@media screen and (max-width: 432px) {
+  .section2 .menu-section2 .left-menu-section2 .menu-grid-3 .text-menu {
+    padding: 0px 15px;
+  }
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .text-menu h3 {
   text-transform: uppercase;
   font-weight: 100;
   font-family: "Roboto";
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .left-part-menu-grid .text-menu p {
+.section2 .menu-section2 .left-menu-section2 .menu-grid-3 .text-menu p {
   font-family: "Poppins";
   font-weight: 100;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   color: #686868;
@@ -630,49 +668,57 @@ header nav ul li {
 .section2 .menu-section2 .left-menu-section2 .menu-grid-4 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90% 10%;
-      grid-template-columns: 90% 10%;
+  -ms-grid-columns: 30% 60% 10%;
+      grid-template-columns: 30% 60% 10%;
   border-bottom: 1px dashed #9f9f9f;
-  margin: 0px 15px;
-}
-
-.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .left-part-menu-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 75%;
-      grid-template-columns: 25% 75%;
+  margin: 0px 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .left-part-menu-grid .menu-pic {
+@media screen and (max-width: 875px) {
+  .section2 .menu-section2 .left-menu-section2 .menu-grid-4 {
+    padding: 35px 0px;
+  }
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .menu-pic {
   background: url(/assets/img/dish-item-04.jpg) center/cover;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .left-part-menu-grid .menu-pic {
+.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .menu-pic {
   height: 70px;
   width: 70px;
   border-radius: 40px;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .left-part-menu-grid .text-menu {
+.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .text-menu {
   text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .left-part-menu-grid .text-menu h3 {
+@media screen and (max-width: 432px) {
+  .section2 .menu-section2 .left-menu-section2 .menu-grid-4 .text-menu {
+    padding: 0px 15px;
+  }
+}
+
+.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .text-menu h3 {
   text-transform: uppercase;
   font-weight: 100;
   font-family: "Roboto";
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
 
-.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .left-part-menu-grid .text-menu p {
+.section2 .menu-section2 .left-menu-section2 .menu-grid-4 .text-menu p {
   font-family: "Poppins";
   font-weight: 100;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   color: #686868;
@@ -688,49 +734,57 @@ header nav ul li {
 .section2 .menu-section2 .right-menu-section2 .menu-grid-5 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90% 10%;
-      grid-template-columns: 90% 10%;
+  -ms-grid-columns: 30% 60% 10%;
+      grid-template-columns: 30% 60% 10%;
   border-bottom: 1px dashed #9f9f9f;
-  margin: 0px 15px;
-}
-
-.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .left-part-menu-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 75%;
-      grid-template-columns: 25% 75%;
+  margin: 0px 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .left-part-menu-grid .menu-pic {
+@media screen and (max-width: 875px) {
+  .section2 .menu-section2 .right-menu-section2 .menu-grid-5 {
+    padding: 35px 0px;
+  }
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .menu-pic {
   background: url(/assets/img/dish-item-05.jpg) center/cover;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .left-part-menu-grid .menu-pic {
+.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .menu-pic {
   height: 70px;
   width: 70px;
   border-radius: 40px;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .left-part-menu-grid .text-menu {
+.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .text-menu {
   text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .left-part-menu-grid .text-menu h3 {
+@media screen and (max-width: 432px) {
+  .section2 .menu-section2 .right-menu-section2 .menu-grid-5 .text-menu {
+    padding: 0px 15px;
+  }
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .text-menu h3 {
   text-transform: uppercase;
   font-weight: 100;
   font-family: "Roboto";
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .left-part-menu-grid .text-menu p {
+.section2 .menu-section2 .right-menu-section2 .menu-grid-5 .text-menu p {
   font-family: "Poppins";
   font-weight: 100;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   color: #686868;
@@ -739,49 +793,57 @@ header nav ul li {
 .section2 .menu-section2 .right-menu-section2 .menu-grid-6 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90% 10%;
-      grid-template-columns: 90% 10%;
+  -ms-grid-columns: 30% 60% 10%;
+      grid-template-columns: 30% 60% 10%;
   border-bottom: 1px dashed #9f9f9f;
-  margin: 0px 15px;
-}
-
-.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .left-part-menu-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 75%;
-      grid-template-columns: 25% 75%;
+  margin: 0px 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .left-part-menu-grid .menu-pic {
+@media screen and (max-width: 875px) {
+  .section2 .menu-section2 .right-menu-section2 .menu-grid-6 {
+    padding: 35px 0px;
+  }
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .menu-pic {
   background: url(/assets/img/dish-item-06.jpg) center/cover;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .left-part-menu-grid .menu-pic {
+.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .menu-pic {
   height: 70px;
   width: 70px;
   border-radius: 40px;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .left-part-menu-grid .text-menu {
+.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .text-menu {
   text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .left-part-menu-grid .text-menu h3 {
+@media screen and (max-width: 432px) {
+  .section2 .menu-section2 .right-menu-section2 .menu-grid-6 .text-menu {
+    padding: 0px 15px;
+  }
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .text-menu h3 {
   text-transform: uppercase;
   font-weight: 100;
   font-family: "Roboto";
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .left-part-menu-grid .text-menu p {
+.section2 .menu-section2 .right-menu-section2 .menu-grid-6 .text-menu p {
   font-family: "Poppins";
   font-weight: 100;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   color: #686868;
@@ -790,49 +852,57 @@ header nav ul li {
 .section2 .menu-section2 .right-menu-section2 .menu-grid-7 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90% 10%;
-      grid-template-columns: 90% 10%;
+  -ms-grid-columns: 30% 60% 10%;
+      grid-template-columns: 30% 60% 10%;
   border-bottom: 1px dashed #9f9f9f;
-  margin: 0px 15px;
-}
-
-.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .left-part-menu-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 75%;
-      grid-template-columns: 25% 75%;
+  margin: 0px 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .left-part-menu-grid .menu-pic {
+@media screen and (max-width: 875px) {
+  .section2 .menu-section2 .right-menu-section2 .menu-grid-7 {
+    padding: 35px 0px;
+  }
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .menu-pic {
   background: url(/assets/img/dish-item-07.jpg) center/cover;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .left-part-menu-grid .menu-pic {
+.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .menu-pic {
   height: 70px;
   width: 70px;
   border-radius: 40px;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .left-part-menu-grid .text-menu {
+.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .text-menu {
   text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .left-part-menu-grid .text-menu h3 {
+@media screen and (max-width: 432px) {
+  .section2 .menu-section2 .right-menu-section2 .menu-grid-7 .text-menu {
+    padding: 0px 15px;
+  }
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .text-menu h3 {
   text-transform: uppercase;
   font-weight: 100;
   font-family: "Roboto";
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .left-part-menu-grid .text-menu p {
+.section2 .menu-section2 .right-menu-section2 .menu-grid-7 .text-menu p {
   font-family: "Poppins";
   font-weight: 100;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   color: #686868;
@@ -841,49 +911,57 @@ header nav ul li {
 .section2 .menu-section2 .right-menu-section2 .menu-grid-8 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90% 10%;
-      grid-template-columns: 90% 10%;
+  -ms-grid-columns: 30% 60% 10%;
+      grid-template-columns: 30% 60% 10%;
   border-bottom: 1px dashed #9f9f9f;
-  margin: 0px 15px;
-}
-
-.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .left-part-menu-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 75%;
-      grid-template-columns: 25% 75%;
+  margin: 0px 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .left-part-menu-grid .menu-pic {
+@media screen and (max-width: 875px) {
+  .section2 .menu-section2 .right-menu-section2 .menu-grid-8 {
+    padding: 35px 0px;
+  }
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .menu-pic {
   background: url(/assets/img/dish-item-08.jpg) center/cover;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .left-part-menu-grid .menu-pic {
+.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .menu-pic {
   height: 70px;
   width: 70px;
   border-radius: 40px;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .left-part-menu-grid .text-menu {
+.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .text-menu {
   text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .left-part-menu-grid .text-menu h3 {
+@media screen and (max-width: 432px) {
+  .section2 .menu-section2 .right-menu-section2 .menu-grid-8 .text-menu {
+    padding: 0px 15px;
+  }
+}
+
+.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .text-menu h3 {
   text-transform: uppercase;
   font-weight: 100;
   font-family: "Roboto";
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
 
-.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .left-part-menu-grid .text-menu p {
+.section2 .menu-section2 .right-menu-section2 .menu-grid-8 .text-menu p {
   font-family: "Poppins";
   font-weight: 100;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   color: #686868;
