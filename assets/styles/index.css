@@ -11,6 +11,7 @@
 @font-face {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
 }
 
 .right-part-menu-grid {
@@ -1411,5 +1412,116 @@ header nav ul li {
   font-family: "Poppins";
   font-weight: 100;
   color: #a67245;
+}
+
+footer {
+  background: url(/assets/img/bg-footer.jpg) center/cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  height: 300px;
+}
+
+footer .left-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .left-part .text {
+  width: 80%;
+}
+
+footer .left-part .text h3 {
+  font-family: "Allura";
+  color: #a67245;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+footer .left-part .text p {
+  color: #6d6d6d;
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 30px;
+}
+
+footer .right-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .right-part .container {
+  width: 80%;
+}
+
+footer .right-part .container .newsletter form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .right-part .container .newsletter form label {
+  color: #eeeeee;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+footer .right-part .container .newsletter form input {
+  background: transparent;
+  border: 1px solid #342a2a;
+  width: 50%;
+  padding: 10px;
+  color: #eeeeee;
+}
+
+footer .right-part .container .contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  margin-top: 20px;
+  width: 60%;
+}
+
+footer .right-part .container .contact h3 {
+  color: #eeeeee;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+footer .right-part .container .contact .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6d6d6d;
 }
 /*# sourceMappingURL=index.css.map */
