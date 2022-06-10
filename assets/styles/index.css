@@ -1024,7 +1024,6 @@ header nav ul li {
   -ms-grid-columns: 60% 40%;
       grid-template-columns: 60% 40%;
   margin: 40px 0 40px;
-  gap: 20px;
 }
 
 .section4 .grid-container .left-part {
@@ -1038,6 +1037,7 @@ header nav ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-right: 20px;
   gap: 20px;
 }
 
@@ -1350,5 +1350,66 @@ header nav ul li {
   letter-spacing: 3px;
   position: absolute;
   bottom: 15%;
+}
+
+.section4 .testimonials {
+  background: #eeeeee;
+  width: 80%;
+  position: relative;
+  border: 1px solid #21201e;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 100px 0 200px;
+  height: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section4 .testimonials .icon-chef {
+  height: 80px;
+  width: 80px;
+  background: url(/assets/img/avatar-02.jpg) center/cover;
+  border-radius: 40px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.section4 .testimonials .text {
+  width: 80%;
+}
+
+.section4 .testimonials .text p {
+  font-family: "Poppins";
+  font-weight: 100;
+  color: #6d6d6d;
+  line-height: 30px;
+  margin-top: 8%;
+}
+
+.section4 .testimonials .text h3 {
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 1.5rem;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  color: #353535;
+}
+
+.section4 .testimonials .text h4 {
+  font-family: "Poppins";
+  font-weight: 100;
+  color: #a67245;
 }
 /*# sourceMappingURL=index.css.map */

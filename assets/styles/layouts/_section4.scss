@@ -24,11 +24,12 @@
     width: 80%;
     grid-template-columns: 60% 40%;
     margin: 40px 0 40px;
-    gap: 20px;
+
     .left-part {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      margin-right: 20px;
       gap: 20px;
       .top-element {
         @include event-template;
@@ -106,6 +107,48 @@
           position: absolute;
           bottom: 15%;
         }
+      }
+    }
+  }
+  .testimonials {
+    background: $color1;
+    width: 80%;
+    position: relative;
+    border: 1px solid $color4;
+    flex-direction: column;
+    margin: 100px 0 200px;
+    height: 380px;
+    @include center;
+    .icon-chef {
+      height: 80px;
+      width: 80px;
+      background: url(/assets/img/avatar-02.jpg) center/cover;
+      border-radius: 40px;
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .text {
+      width: 80%;
+      p {
+        font-family: $font2;
+        font-weight: 100;
+        color: $color5;
+        line-height: 30px;
+        margin-top: 8%;
+      }
+      h3 {
+        font-family: $font2;
+        font-weight: 100;
+        font-size: 1.5rem;
+        margin-block-end: 0;
+        color: rgb(53, 53, 53);
+      }
+      h4 {
+        font-family: $font2;
+        font-weight: 100;
+        color: $color2;
       }
     }
   }
