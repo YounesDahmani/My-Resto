@@ -3,6 +3,16 @@
   @include center;
   flex-direction: column;
   text-align: center;
+  position: relative;
+  &::after {
+    content: "";
+    background: url(/assets/img/gmap.jpg) center/cover;
+    height: 25%;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    z-index: 0;
+  }
   h2 {
     @include title;
     font-size: 2.5rem;
@@ -112,11 +122,12 @@
   }
   .testimonials {
     background: $color1;
+    z-index: 5;
     width: 80%;
     position: relative;
     border: 1px solid $color4;
     flex-direction: column;
-    margin: 100px 0 200px;
+    margin: 100px 0 250px;
     height: 380px;
     @include center;
     .icon-chef {

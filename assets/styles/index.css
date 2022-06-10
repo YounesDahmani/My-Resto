@@ -995,6 +995,17 @@ header nav ul li {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  position: relative;
+}
+
+.section4::after {
+  content: "";
+  background: url(/assets/img/gmap.jpg) center/cover;
+  height: 25%;
+  width: 100%;
+  bottom: 0px;
+  position: absolute;
+  z-index: 0;
 }
 
 .section4 h2 {
@@ -1355,6 +1366,7 @@ header nav ul li {
 
 .section4 .testimonials {
   background: #eeeeee;
+  z-index: 5;
   width: 80%;
   position: relative;
   border: 1px solid #21201e;
@@ -1362,7 +1374,7 @@ header nav ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 100px 0 200px;
+  margin: 100px 0 250px;
   height: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
