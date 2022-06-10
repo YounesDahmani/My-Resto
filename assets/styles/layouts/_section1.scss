@@ -2,6 +2,9 @@
   display: grid;
   grid-template-columns: 50% 50%;
   text-align: center;
+  @media screen and(max-width: 660px) {
+    display: block;
+  }
   .left-section1 {
     max-width: 100%;
     padding: 20px;
@@ -65,5 +68,8 @@
   .right-section1 {
     max-width: 100%;
     background: url(/assets/img/store-01.jpg) center/cover;
+    @media screen and(max-width: 660px) {
+      display: none;
+    }
   }
 }

@@ -255,6 +255,12 @@ header nav ul li {
   text-align: center;
 }
 
+@media screen and (max-width: 660px) {
+  .section1 {
+    display: block;
+  }
+}
+
 .section1 .left-section1 {
   max-width: 100%;
   padding: 20px;
@@ -358,6 +364,12 @@ header nav ul li {
 .section1 .right-section1 {
   max-width: 100%;
   background: url(/assets/img/store-01.jpg) center/cover;
+}
+
+@media screen and (max-width: 660px) {
+  .section1 .right-section1 {
+    display: none;
+  }
 }
 
 .section2 {
