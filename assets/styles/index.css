@@ -1226,12 +1226,24 @@ header nav ul li {
   z-index: 0;
 }
 
+@media screen and (max-width: 875px) {
+  .section4::after {
+    height: 50%;
+  }
+}
+
 .section4 h2 {
   font-family: "Allura";
   color: #a67245;
   font-weight: 100;
   font-size: 2.5rem;
   line-height: 30px;
+}
+
+@media screen and (max-width: 875px) {
+  .section4 h2 {
+    display: none;
+  }
 }
 
 .section4 h2 span {
@@ -1247,6 +1259,12 @@ header nav ul li {
   height: 30px;
 }
 
+@media screen and (max-width: 875px) {
+  .section4 .icon {
+    display: none;
+  }
+}
+
 .section4 .grid-container {
   display: -ms-grid;
   display: grid;
@@ -1254,6 +1272,12 @@ header nav ul li {
   -ms-grid-columns: 60% 40%;
       grid-template-columns: 60% 40%;
   margin: 40px 0 40px;
+}
+
+@media screen and (max-width: 875px) {
+  .section4 .grid-container {
+    display: none;
+  }
 }
 
 .section4 .grid-container .left-part {
@@ -1605,6 +1629,13 @@ header nav ul li {
           align-items: center;
 }
 
+@media screen and (max-width: 540px) {
+  .section4 .testimonials {
+    height: 100%;
+    padding-top: 40px;
+  }
+}
+
 .section4 .testimonials .icon-chef {
   height: 80px;
   width: 80px;
@@ -1619,6 +1650,12 @@ header nav ul li {
 
 .section4 .testimonials .text {
   width: 80%;
+}
+
+@media screen and (max-width: 875px) {
+  .section4 .testimonials .text {
+    height: 80%;
+  }
 }
 
 .section4 .testimonials .text p {

@@ -12,11 +12,17 @@
     bottom: 0px;
     position: absolute;
     z-index: 0;
+    @media screen and(max-width:875px ) {
+      height: 50%;
+    }
   }
   h2 {
     @include title;
     font-size: 2.5rem;
     line-height: 30px;
+    @media screen and(max-width:875px ) {
+      display: none;
+    }
     span {
       font: 2rem $font3;
       letter-spacing: 1px;
@@ -28,12 +34,18 @@
     background: url(/assets/img/ic-plate.png) center/cover;
     width: 30px;
     height: 30px;
+    @media screen and(max-width:875px ) {
+      display: none;
+    }
   }
   .grid-container {
     display: grid;
     width: 80%;
     grid-template-columns: 60% 40%;
     margin: 40px 0 40px;
+    @media screen and(max-width:875px ) {
+      display: none;
+    }
 
     .left-part {
       display: flex;
@@ -129,6 +141,10 @@
     flex-direction: column;
     margin: 100px 0 250px;
     height: 380px;
+    @media screen and(max-width:540px ) {
+      height: 100%;
+      padding-top: 40px;
+    }
     @include center;
     .icon-chef {
       height: 80px;
@@ -142,6 +158,9 @@
     }
     .text {
       width: 80%;
+      @media screen and(max-width:875px ) {
+        height: 80%;
+      }
       p {
         font-family: $font2;
         font-weight: 100;
