@@ -44,6 +44,9 @@
     }
     li {
       position: relative;
+      @media screen and(max-width:375px ) {
+        font-size: 0.7rem;
+      }
 
       &::after {
         content: "";
