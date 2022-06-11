@@ -6,6 +6,10 @@
     margin: 0 auto 75px;
     display: grid;
     grid-template-columns: 30% 70%;
+    @media screen and(max-width:875px ) {
+      display: block;
+      width: 90%;
+    }
     .left-part {
       background: $color3;
       display: flex;
@@ -17,6 +21,9 @@
         width: 100%;
         @include center;
         flex-direction: column;
+        @media screen and(max-width:1130px ) {
+          padding: 10px;
+        }
         h2 {
           @include title;
           font-size: 2.5rem;
@@ -38,6 +45,10 @@
           font-family: $font3;
           text-transform: uppercase;
           color: $color2;
+          @media screen and(max-width:1130px ) {
+            font-size: 1rem;
+            text-align: center;
+          }
         }
         p {
           color: $color1;
@@ -53,9 +64,15 @@
       text-align: center;
       @include center;
       flex-direction: column;
+
       .right-part-container {
         height: 80%;
         width: 100%;
+        @media screen and(max-width:875px ) {
+          padding: 15px;
+          width: 90%;
+        }
+
         h3 {
           @include title;
           font-size: 2.5rem;
@@ -76,6 +93,10 @@
           margin: 25px auto 45px;
         }
         form {
+          text-align: center;
+          @media screen and(max-width:875px ) {
+            margin: 0 auto;
+          }
           .container {
             width: 80%;
             margin: 0 auto;
@@ -84,10 +105,19 @@
             grid-template-columns: 33% 34% 33%;
             grid-template-rows: 33% 34% 33%;
             gap: 15px;
+            @media screen and(max-width:875px ) {
+              display: block;
+              margin: 0 auto;
+              padding: 15px;
+            }
 
             .form-input {
               border-bottom: 1px solid rgb(176, 176, 176);
               width: 100%;
+              @media screen and(max-width:875px ) {
+                padding: 15px;
+                width: auto;
+              }
             }
 
             input:not([type="submit"]) {

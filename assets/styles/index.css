@@ -981,6 +981,13 @@ header nav ul li {
       grid-template-columns: 30% 70%;
 }
 
+@media screen and (max-width: 875px) {
+  .section3 .section3-element {
+    display: block;
+    width: 90%;
+  }
+}
+
 .section3 .section3-element .left-part {
   background: #000000;
   display: -webkit-box;
@@ -1014,6 +1021,12 @@ header nav ul li {
           flex-direction: column;
 }
 
+@media screen and (max-width: 1130px) {
+  .section3 .section3-element .left-part .left-part-container {
+    padding: 10px;
+  }
+}
+
 .section3 .section3-element .left-part .left-part-container h2 {
   font-family: "Allura";
   color: #a67245;
@@ -1040,6 +1053,13 @@ header nav ul li {
   font-family: "Roboto";
   text-transform: uppercase;
   color: #a67245;
+}
+
+@media screen and (max-width: 1130px) {
+  .section3 .section3-element .left-part .left-part-container h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 .section3 .section3-element .left-part .left-part-container p {
@@ -1073,6 +1093,13 @@ header nav ul li {
   width: 100%;
 }
 
+@media screen and (max-width: 875px) {
+  .section3 .section3-element .right-part .right-part-container {
+    padding: 15px;
+    width: 90%;
+  }
+}
+
 .section3 .section3-element .right-part .right-part-container h3 {
   font-family: "Allura";
   color: #a67245;
@@ -1098,6 +1125,16 @@ header nav ul li {
   margin: 25px auto 45px;
 }
 
+.section3 .section3-element .right-part .right-part-container form {
+  text-align: center;
+}
+
+@media screen and (max-width: 875px) {
+  .section3 .section3-element .right-part .right-part-container form {
+    margin: 0 auto;
+  }
+}
+
 .section3 .section3-element .right-part .right-part-container form .container {
   width: 80%;
   margin: 0 auto;
@@ -1113,9 +1150,24 @@ header nav ul li {
   gap: 15px;
 }
 
+@media screen and (max-width: 875px) {
+  .section3 .section3-element .right-part .right-part-container form .container {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+  }
+}
+
 .section3 .section3-element .right-part .right-part-container form .container .form-input {
   border-bottom: 1px solid #b0b0b0;
   width: 100%;
+}
+
+@media screen and (max-width: 875px) {
+  .section3 .section3-element .right-part .right-part-container form .container .form-input {
+    padding: 15px;
+    width: auto;
+  }
 }
 
 .section3 .section3-element .right-part .right-part-container form .container input:not([type="submit"]) {
