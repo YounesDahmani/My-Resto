@@ -1,150 +1,109 @@
 .section3 {
-  background: $color4;
-  padding: 25px 0px;
-  .section3-element {
-    width: 70%;
-    margin: 0 auto 75px;
+  padding: 100px 15px 65px;
+  color: $white;
+
+  .form-content {
     display: grid;
     grid-template-columns: 30% 70%;
-    @media screen and(max-width:875px ) {
-      display: block;
-      width: 90%;
+    background: $white;
+    max-width: 1050px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 850px) {
+      grid-template-columns: 1fr;
     }
-    .left-part {
-      background: $color3;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 25px;
-      .left-part-container {
-        border: 1px dashed $color1;
-        width: 100%;
-        @include center;
-        flex-direction: column;
-        @media screen and(max-width:1130px ) {
-          padding: 10px;
-        }
-        h2 {
-          @include title;
-          font-size: 2.5rem;
-          text-align: center;
-          line-height: 25px;
-          span {
-            font-family: $font3;
-            text-transform: uppercase;
-            color: $color1;
-            font-size: 1.5rem;
-          }
-        }
-        .icon {
-          background: url(/assets/img/ic-plate.png) center/cover;
-          width: 30px;
-          height: 30px;
-        }
+
+    .hours {
+      padding: 24px;
+      background: black;
+
+      .hours-content {
+        border: 1px dashed $grey;
+        padding: 20px 0;
+
         h3 {
-          font-family: $font3;
-          text-transform: uppercase;
-          color: $color2;
-          @media screen and(max-width:1130px ) {
-            font-size: 1rem;
-            text-align: center;
-          }
+          font-family: $font1;
+          font-size: 2.5rem;
+          font-weight: 100;
+          color: $color1;
         }
-        p {
+
+        h4 {
+          font-family: $font2;
+          margin-top: -16px;
+          letter-spacing: 2px;
+          font-size: 1.3rem;
+        }
+
+        img {
+          margin-top: 25px;
+        }
+        h5 {
+          text-transform: uppercase;
           color: $color1;
           font-family: $font2;
-          text-align: center;
           font-weight: 100;
-          font-size: 0.8rem;
+          font-size: 1.1rem;
+          margin: 38px 0 12px;
+        }
+
+        p {
+          font-size: 0.85rem;
         }
       }
     }
-    .right-part {
-      background: $color1;
-      text-align: center;
-      @include center;
-      flex-direction: column;
+    .form-infos {
+      @include childCenter;
+      padding: 30px 0;
 
-      .right-part-container {
-        height: 80%;
-        width: 100%;
-        @media screen and(max-width:875px ) {
-          padding: 15px;
-          width: 90%;
+      h2 {
+        font-family: $font1;
+        font-size: 2.5rem;
+        font-weight: 100;
+        color: $color1;
+      }
+      h3 {
+        color: $black;
+        margin-top: -18px;
+        font-family: $font2;
+        font-size: 1.8rem;
+      }
+      img {
+        height: 25px;
+        margin: 25px;
+      }
+      .form-inputs {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 680px) {
+          grid-template-columns: 1fr;
         }
 
-        h3 {
-          @include title;
-          font-size: 2.5rem;
-          text-align: center;
-          line-height: 30px;
-          margin-block-end: 0;
-          span {
-            font-family: $font3;
-            text-transform: uppercase;
-            color: $color3;
-            font-size: 2rem;
-          }
+        > * {
+          padding: 10px 0;
+          margin: 10px;
+          background: none;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid $grey;
         }
-        .icon {
-          background: url(/assets/img/ic-plate.png) center/cover;
-          width: 30px;
-          height: 30px;
-          margin: 25px auto 45px;
-        }
-        form {
-          text-align: center;
-          @media screen and(max-width:875px ) {
-            margin: 0 auto;
-          }
-          .container {
-            width: 80%;
-            margin: 0 auto;
-            display: grid;
-            align-items: center;
-            grid-template-columns: 33% 34% 33%;
-            grid-template-rows: 33% 34% 33%;
-            gap: 15px;
-            @media screen and(max-width:875px ) {
-              display: block;
-              margin: 0 auto;
-              padding: 15px;
-            }
+      }
+      button {
+        border: none;
+        border-radius: 50px;
+        background: $black;
+        color: $white;
+        padding: 16px 34px;
+        letter-spacing: 4px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.2s;
 
-            .form-input {
-              border-bottom: 1px solid rgb(176, 176, 176);
-              width: 100%;
-              @media screen and(max-width:875px ) {
-                padding: 15px;
-                width: auto;
-              }
-            }
-
-            input:not([type="submit"]) {
-              background: transparent;
-              padding: 8px;
-              border-width: 0;
-              font-family: $font2;
-              font-weight: 100;
-              width: 100%;
-            }
-          }
-          .submit-btn {
-            display: block;
-            width: 100%;
-          }
-          input[type="submit"] {
-            background: $color3;
-            color: $color1;
-            font-family: $font3;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            margin-top: 35px;
-            padding: 12px 30px;
-            border-radius: 30px;
-            border: none;
-          }
+        &:hover {
+          transform: translateX(3px);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.433);
         }
       }
     }

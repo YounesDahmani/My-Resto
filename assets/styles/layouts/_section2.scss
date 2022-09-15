@@ -1,146 +1,95 @@
 .section2 {
-  background: $color4;
-  text-align: center;
+  color: $white;
+  padding-bottom: 100px;
   position: relative;
 
-  @include center;
-  flex-direction: column;
-
-  &::after {
+  &:after {
     content: "";
-    background: url(/assets/img/bg-menu-01.jpg) center/cover;
     position: absolute;
-    bottom: 45px;
-    max-width: 1920px;
+    height: 620px;
     width: 100%;
-    height: 580px;
-    z-index: 1;
+    background: url(../img/bg-menu-01.jpg) center/cover;
+    left: 50%;
+    bottom: -330px;
+    transform: translate(-50%, -50%);
   }
   h2 {
-    margin-block: 0;
-    padding: 55px 0px 20px;
-    text-align: center;
-    font-size: 2.5rem;
-    @include title;
-  }
-  .icon-section2 {
-    background: url(/assets/img/ic-plate.png) center/cover;
-    width: 30px;
-    height: 30px;
-    margin-bottom: 20px;
+    color: $color1;
+    font-size: 2rem;
+    font-family: $font1;
+    font-weight: 500;
+    padding: 60px 0 30px;
   }
   ul {
-    flex-direction: row;
-    justify-content: space-between;
-    display: flex;
-    padding: 0;
-    color: $color1;
-    font-family: $font2;
-    font-weight: 100;
-    width: 40%;
-    margin-bottom: 35px;
-    @media screen and(max-width:875px ) {
-      width: 80%;
-    }
-    li {
-      position: relative;
-      @media screen and(max-width:375px ) {
-        font-size: 0.7rem;
-      }
+    @include alignChildren(space-around);
+    width: 50%;
+    margin: 30px auto;
+    min-width: 500px;
 
-      &::after {
-        content: "";
-        width: 100%;
-        height: 1px;
-        background: $color1;
-        position: absolute;
-        bottom: -7px;
-        transform: translateX(-100%);
-      }
+    @media screen and (max-width: 680px) {
+      min-width: 200px;
+      width: 90%;
+      font-size: 0.65rem;
+    }
+
+    li {
+      border-bottom: 1px solid $grey;
+      padding-bottom: 8px;
     }
   }
-  .menu-section2 {
+  .meals {
+    background: $white;
+    color: $black;
+    width: 85%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 4px solid $color1;
+    padding: 15px 0;
     display: grid;
-    z-index: 2;
     grid-template-columns: 50% 50%;
-    background: $color1;
-    width: 60%;
-    border-top: 5px solid $color2;
-    margin-bottom: 150px;
-    padding-bottom: 20px;
-    height: 550px;
-    @media screen and(max-width:875px ) {
-      display: block;
-      width: 80%;
-      height: 100%;
+    z-index: 1000;
+    position: relative;
+
+    @media screen and (max-width: 680px) {
+      grid-template-columns: 1fr;
     }
-    .left-menu-section2 {
+
+    .meal {
       display: grid;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      .menu-grid-1 {
-        @include grid-template;
+      grid-template-columns: 25% 60% 15%;
+      border-bottom: 1px dashed $grey;
+      padding: 30px 0;
+      margin: 0 20px;
 
-        .menu-pic {
-          background: url(/assets/img/dish-item-01.jpg) center/cover;
-        }
-        @include grid-template-2;
+      img {
+        border-radius: 50px;
+        object-fit: cover;
+        width: 100%;
+        align-self: center;
       }
-      .menu-grid-2 {
-        @include grid-template;
+      .meal-text {
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 10px;
+        height: 100%;
 
-        .menu-pic {
-          background: url(/assets/img/dish-item-02.jpg) center/cover;
+        h3 {
+          text-transform: uppercase;
+          color: $black;
+          font-size: 0.8rem;
+          font-weight: bold;
+          margin-bottom: 5px;
         }
-        @include grid-template-2;
       }
-      .menu-grid-3 {
-        @include grid-template;
-
-        .menu-pic {
-          background: url(/assets/img/dish-item-03.jpg) center/cover;
-        }
-        @include grid-template-2;
-      }
-      .menu-grid-4 {
-        @include grid-template;
-
-        .menu-pic {
-          background: url(/assets/img/dish-item-04.jpg) center/cover;
-        }
-        @include grid-template-2;
-      }
-    }
-    .right-menu-section2 {
-      display: grid;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      .menu-grid-5 {
-        @include grid-template;
-
-        .menu-pic {
-          background: url(/assets/img/dish-item-05.jpg) center/cover;
-        }
-        @include grid-template-2;
-      }
-      .menu-grid-6 {
-        @include grid-template;
-        .menu-pic {
-          background: url(/assets/img/dish-item-06.jpg) center/cover;
-        }
-        @include grid-template-2;
-      }
-      .menu-grid-7 {
-        @include grid-template;
-        .menu-pic {
-          background: url(/assets/img/dish-item-07.jpg) center/cover;
-        }
-        @include grid-template-2;
-      }
-      .menu-grid-8 {
-        @include grid-template;
-        .menu-pic {
-          background: url(/assets/img/dish-item-08.jpg) center/cover;
-        }
-        @include grid-template-2;
+      > p {
+        color: $color1;
+        font-weight: 600;
+        font-size: 1.1rem;
+        display: grid;
+        height: 100%;
+        align-items: center;
       }
     }
   }
